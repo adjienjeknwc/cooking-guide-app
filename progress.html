@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooking App – Progress</title>
+  
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background: #f9f9f9;
+          font-family: Arial, sans-serif;
+        }
+    
+        .nav-icon {
+          width: 30px;
+          margin: 20px;
+          cursor: default;
+        }
+    
+        .nav-icon .line {
+          height: 4px;
+          background-color: #333;
+          margin: 6px 0;
+          border-radius: 2px;
+          transition: background-color 0.3s ease;
+        }
+    
+        .nav-icon:hover .line {
+          background-color: #007BFF;
+        }
+      </style>
+      <div class="nav-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+
+
+  <main class="page progress">
+    <header>
+      <h2>Hello, Chef!</h2>
+      <p>You are doing great</p>
+      <div class="progress-bar">
+        <span>Your Progress</span>
+        <div class="bar"><div class="fill" style="width:40%"></div></div>
+      </div>
+    </header>
+    <section class="cards">
+      <article class="card">
+        <h3>Level 1.1</h3>
+        <p>Low flame vs high flame</p>
+      </article>
+      <!-- <article class="card highlight"> -->
+        <!-- <h3>Level 1.2 🌮</h3>
+        <p>Let's learn to make some amazing Tacos!!</p> -->
+        <article class="card highlight">
+            <img src="taco.jpg" alt="Taco" style="
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          "
+           class="card-img" />
+            <h3>Level 1.2 🌮</h3>
+            <p>Let's learn to make some amazing Tacos!!</p>
+          </article>
+          
+
+      </article>
+      <article class="card locked">
+        <h3>Level 1.3</h3>
+        <p>Practice your knife skills</p>
+      </article>
+    </section>
+    <button class="back" onclick="location.href='levels.html'">← Back</button>
+  </main>
+</body>
+</html>

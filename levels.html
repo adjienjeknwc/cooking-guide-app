@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooking App – Levels</title>
+  <style>
+    body  {
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav-icon {
+      width: 30px;
+      margin: 20px;
+      cursor: default;
+    }
+
+    .nav-icon .line {
+      height: 4px;
+      background-color: #333;
+      margin: 6px 0;
+      border-radius: 2px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-icon:hover .line {
+      background-color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fake Hamburger Navigation Icon -->
+  <div class="nav-icon">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="padding: 20px;">
+  <main class="page levels">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img 
+          src="image.png" 
+          alt="Cooking Levels Banner"
+          style="
+            width: 70%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          "
+        />
+      </div>
+    <!-- <h1>Select Your Level</h1> -->
+    <h1 style="
+    font-family: 'Comic Sans MS', 'Poppins', cursive;
+    font-size: 1.5rem;
+    color: hsl(5, 81%, 44%);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    background-color: #fff0f5;
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  ">
+    🍳 Select Your Level 🍓
+  </h1>
+  
+
+    <div class="levels-grid">
+
+      <!-- Level 1 – Active -->
+      <div class="level-card">
+        <h3>Level 1</h3>
+        <p>Let's start with the basics</p>
+        <button onclick="location.href='progress.html'">▶ Play</button>
+      </div>
+
+      <!-- Level 2 – Locked -->
+      <div class="level-card locked">
+        <h3>Level 2</h3>
+        <p>Learn how to prepare popular foods</p>
+        <div class="lock">🔒 Locked</div>
+      </div>
+
+      <!-- Level 3 – Locked -->
+      <div class="level-card locked">
+        <h3>Level 3</h3>
+        <p>Put your cooking knowledge to the test</p>
+        <div class="lock">🔒 Locked</div>
+      </div>
+
+    </div>
+
+    <!-- Back Button -->
+    <!-- <button class="back-btn" onclick="location.href='index.html'">← Back</button> -->
+
+
+    <button 
+  onclick="location.href='index.html'" 
+  style="
+    padding: 10px 20px;
+    background-color: #e3ec42;
+    color: #333;
+    border: 2px solid hsl(53, 68%, 5%);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  "
+  onmouseover="this.style.backgroundColor='#f2f2f2'; this.style.color='#000';"
+  onmouseout="this.style.backgroundColor='white'; this.style.color='#333';"
+>
+  ← Back
+</button>
+
+  </main>
+</body>
+</html>

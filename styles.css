@@ -1,0 +1,205 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',sans-serif; background:#f9f9f9; }
+
+.page {
+  min-height:100vh;
+  padding:20px;
+  text-align:center;
+}
+
+/* Home */
+.home {
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  background:#fff7e6;
+}
+.home .emoji { font-size:6rem; margin-bottom:20px; }
+.home button {
+  background:#ffe873; border:none; padding:12px 24px;
+  border-radius:12px; cursor:pointer; margin-top:20px;
+  transition:0.3s;
+}
+.home button:hover { background:#ffd43b; }
+
+/* Levels */
+.levels { background:hwb(184 58% 11%); }
+
+.levels .illustration { font-size:2rem; margin-bottom:20px; }
+.level-box {
+  background:#c16ecc; padding:15px; margin:10px auto; max-width:300px;
+  border-radius:12px; position:relative; box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+.level-box.locked { opacity:0.6; }
+.level-box .lock {
+  position:absolute; top:15px; right:15px; font-size:1.2rem;
+}
+.levels button.back {
+  margin-top:30px; background:none; border:none; color:#555;
+  cursor:pointer;
+}
+
+/* Progress */
+.progress { background:#fff7ec; }
+.progress header h2 { font-size:1.5rem; }
+.progress header p { color:#555; margin-bottom:10px; }
+.progress .progress-bar {
+  width:90%; max-width:400px; margin:10px auto;
+  text-align:left;
+}
+.progress .bar {
+  width:100%; height:8px; background:#ddd; border-radius:4px;
+  overflow:hidden; margin-top:5px;
+}
+.progress .fill { height:100%; background:gold; }
+.cards { margin-top:20px; }
+.card {
+  background:rgb(198, 89, 200); padding:15px; margin:10px auto; max-width:300px;
+  border-radius:12px; box-shadow:0 1px 4px rgba(0,0,0,0.1);
+  text-align:left;
+}
+.card.highlight { background:#ffeefc; }
+.card.locked { background:#272020; opacity:0.7; }
+.progress button.back {
+  margin-top:30px; background:none; border:none; color:#555;
+  cursor:pointer;
+}
+
+/* Responsive */
+@media(max-width:480px){
+  .emoji { font-size:4rem; }
+  .home h1 { font-size:1.5rem; }
+}
+
+.back-btn {
+    background-color: hsl(48, 91%, 56%);
+    border: 2px solid #ccc;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .back-btn:hover {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
+  /* Container to center the button */
+.top-play-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  /* Play Button Styling */
+  .play-btn {
+    background-color: #ffb347;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .play-btn:hover {
+    background-color: #ff9933;
+    transform: scale(1.05);
+  }
+  
+  body {
+    padding: 20px;
+  }
+  h1, h2, h3 {
+    margin-bottom: 12px;
+  }
+  
+  p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .level-box,
+.card {
+  margin: 16px auto;
+  padding: 16px;
+}
+
+
+
+
+
+/* Grid layout for all level cards */
+.levels-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  /* Single card style */
+  .level-card {
+    background: #dbdce2;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(180, 67, 67, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+  }
+  
+  /* Text inside the card */
+  .level-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .level-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  /* Play button inside card */
+  .level-card button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffb347;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .level-card button:hover {
+    background-color: #ff9933;
+  }
+  
+  /* Hover effect for entire card */
+  .level-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(20, 130, 75, 0.12);
+  }
+  
+  /* Locked state */
+  .level-card.locked {
+    opacity: 0.6;
+    position: relative;
+  }
+  
+  .level-card .lock {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1rem;
+    color: #cc0000;
+    font-weight: bold;
+  }
+  
